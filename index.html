@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClovAid</title>
+    
+
+    <!--my link will go here-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    
+  
+
+      
+    
+    
+</head>
+<body>
+    <main class="container" >
+      <p class="placeholder-glow" style="color: darkblue;"></p>
+      
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="4000">
+      <img src="./img/samuel-regan-asante-JjlkGAc4OUM-unsplash.jpg" class="d-block w-100 rounded h-20" alt="..." style="padding-inline: initial;">
+    </div>
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="./img/elyse-chia-kyeJW1zRH0I-unsplash.jpg" class="d-block w-100 rounded h-20" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="./img/katt-yukawa-K0E6E0a0R3A-unsplash.jpg" class="d-block w-100 rounded h-20" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+  <span class="placeholder col-12" style="color:grey" ></span>
+</p>
+
+<h2 class="text-center"><strong>CloveAid</strong></h2>
+<p class="small text-muted text-center" id="book-text">We are a community focused book donation service that helps connect gently used books with new readers. Our work supports literacy, reuse, and access to learning resources. The money collected is donated for charity.</p>
+
+
+
+</p>
+        
+       <header class="d-flex align-items-center mb-4">
+            <div class="me-auto">
+            
+                <div class="muted-small">
+                  <p>
+  <div>
+
+
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    Click to know What we do
+  </button>
+  </div>
+  
+</p>
+<div style="min-height: 1px;">
+  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+    <div id="mission" class="card card-body" style="width: 500px;">
+  <p>   
+Our mission is to make giving easier. From essential goods to helpful services, every donation you make here goes toward helping people in difficult situations. We aim to encourage kindness, support local communities, and inspire others to make a positive impact.
+  </p >   
+</div>
+  </div>
+</div>
+</div>
+            </div>
+
+            
+            <div>
+        <button id="toggleCartBtn" class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#cartCollapse" aria-expanded="false" aria-controls="cartCollapse">
+          
+          Cart <span id="cartCountBadge" class="badge bg-primary cart-badge">+</span>
+        </button>
+      </div>
+        
+            
+        </header>
+      
+        
+        </section>
+
+        
+
+
+        <!--my cart-->
+        <section class="container">
+      <div class="collapse" id="cartCollapse">
+        <div class="card card-body">
+          <div class="d-flex justify-content-between align-items-center">
+            <h3 class="h6 mb-0">Donate today</h3>
+            <div>
+              <button id="clearCartBtn" class="btn btn-sm btn-outline-danger">Clear Cart</button>
+              <button id="checkoutShowBtn" class="btn btn-sm btn-primary ms-2">Checkout</button>
+            </div>
+          </div>
+          
+          <div id="cartItemsContainer" class="mb-3">
+            <!-- Cart items list -->
+            <p class="text-muted">Your cart is empty.</p>
+          </div>
+          <div id="cartSummary" class="mb-2">
+            
+          </div>
+
+          
+          
+       <!--main section-->   
+    </main>
+    <section class="container">
+  <h2 class="h5 mb-3">Products & Services</h2>
+  <p>Donate Today and make a difference!</p>
+  <div class="row g-3" id="card-img-top">
+
+    <!-- Item 1 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="./img/image6 (6).jpg" id="book-img" class="card-img-top" alt="Book-The passion Within">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">The Passion Within</h5>
+          <p class="card-text small text-muted" id="book-text">A heartfelt story about finding strength and meaning through difficult moments. It explores personal growth and the quiet power of inner motivation.</p>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <strong>€ 5.42 </strong>
+            <button class="btn btn-sm btn-outline-primary add-to-cart-btn" data-id="p1">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="./img/pexels-helloaesthe-31078816.jpg" id="book-img" class="card-img-top" alt="Book-Mona'nin Gözleri">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Mona'nin Gözleri</h5>
+          <p class="card-text small text-muted" id="book-text">A poetic and emotional novel that follows a character whose world changes through a series of unexpected relationships and memories. Beautifully written with a reflective tone.</p>
+          <div class="mt-auto d-flex justify-content-between">
+            <strong>€ 8.5</strong>
+            <button class="btn btn-sm btn-outline-primary add-to-cart-btn" data-id="p2">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="./img/pexels-cottonbro-6475044.jpg" id="book-img" class="card-img-top" alt="The Sorrows of Young Werther">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">The Sorrows of Young Werther</h5>
+          <p class="card-text small text-muted" id="book-text">A classic tale of deep emotion and unrequited love, capturing the struggles of a sensitive young man. Known for its vivid emotional expression</p>
+          <div class="mt-auto d-flex justify-content-between">
+            <strong>€ 12</strong>
+            <button class="btn btn-sm btn-outline-primary add-to-cart-btn" data-id="p3">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="./img/pexels-ekrulila-8410070.jpg" id="book.img" class="card-img-top" alt="The Film Book">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">The Film Book</h5>
+          <p class="card-text small text-muted" id="book-text">A simple, visual introduction to important movies, directors, and techniques. Great for anyone who enjoys cinema or wants to learn more about filmmaking.</p>
+          <div class="mt-auto d-flex justify-content-between">
+            <strong>€ 10.75</strong>
+            <button class="btn btn-sm btn-outline-primary add-to-cart-btn" data-id="p4">Add</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!--item 5-->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="./img/pexels-esra-ercan-42706796-7434528.jpg" id="book-img" class="card-img-top" alt="Gurur Ve Önyargi (Pride and Prejudice)">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Gurur Ve Önyargi (Pride and Prejudice)</h5>
+          <p class="card-text small text-muted" id="book-text">A beloved literary classic about love, misunderstandings, and society's expectations. It is written with clever humor and timeless themes.</p>
+          <div class="mt-auto d-flex justify-content-between">
+            <strong>€ 9</strong>
+            <button class="btn btn-sm btn-outline-primary add-to-cart-btn" data-id="p5">Add</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!--item6-->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="./img/image6 (1).jpeg" class="card-img-top" id="book-img" alt=" Book-Sharp Force">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Sharp Force</h5>
+          <p class="card-text small text-muted" id="book-text">A gripping mystery or action style story with tension and fast pacing. Ideal for readers who enjoy suspense and unexpected twists.</p>
+          <div class="mt-auto d-flex justify-content-between">
+            <strong>€ 6.54</strong>
+            <button class="btn btn-sm btn-outline-primary add-to-cart-btn" data-id="p6">Add</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!--item 7-->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="./img/hope-s-end-taschenbuch-riley-sager.webp" id="book-img" class="card-img-top" alt="Book-Hope's End">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Hope's End</h5>
+          <p class="card-text small text-muted" id="book-text">A dramatic and atmospheric story about courage, survival, and holding onto hope when everything appears lost.</p>
+          <div class="mt-auto d-flex justify-content-between">
+            <strong>€ 10.87</strong>
+            <button class="btn btn-sm btn-outline-primary add-to-cart-btn" data-id="p7">Add</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!--item 8-->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="./img/image6 (1).webp" class="card-img-top" alt="The Secrets of Secrets" id="book-img">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">The Secrets of Secrets</h5>
+          <p class="card-text small text-muted" id="book-text">A reflective and insightful book that explores hidden truths, self-discovery, and the mysteries that shape our lives.</p>
+          <div class="mt-auto d-flex justify-content-between">
+            <strong>€ 12</strong>
+            <button class="btn btn-sm btn-outline-primary add-to-cart-btn" data-id="p8">Add</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!--item 8-->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="./img/image6 (3).jpg" id="book-img" class="card-img-top" alt="The Polaroid Book">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">The Polaroid Book</h5>
+          <p class="card-text small text-muted" id="book-text">A visual collection of creative Polaroid photography. Perfect for art lovers or anyone who appreciates nostalgic photography.</p>
+          <div class="mt-auto d-flex justify-content-between">
+            <strong>€ 7</strong>
+            <button class="btn btn-sm btn-outline-primary add-to-cart-btn" data-id="p9">Add</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!--item 9-->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="./img/pexels-natalie-bond-320378-1643033.jpg" id="book-img" class="card-img-top" alt="Book-Where are you">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Where Are You?</h5>
+          <p class="card-text small text-muted" id="book-text">A thoughtful story centered on searching  for a person, a purpose, or an answer. Emotional, engaging, and introspective.</p>
+          <div class="mt-auto d-flex justify-content-between">
+            <strong>€ 11.32</strong>
+            <button class="btn btn-sm btn-outline-primary add-to-cart-btn" data-id="p10">Add</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!--item 10-->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="./img/image6 (5).jpg" class="card-img-top" alt="Older Book Collection" id="book-img">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Older Book Collection</h5>
+          <p class="card-text small text-muted" id="book-text">A mix of vintage and older titles that offer unique perspectives, traditional storytelling styles, and classic charm. Most of these books are free.</p>
+          <div class="mt-auto d-flex justify-content-between">
+            <strong>Free</strong>
+            <button class="btn btn-sm btn-outline-primary add-to-cart-btn" data-id="p11">Add</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!--item 11-->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="./img/image6 (6).jpg" class="card-img-top" alt="The Passion Within(Second Edition)" id="book-img">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">The Passion Within (Second Edition)</h5>
+          <p class="card-text small text-muted" id="book-text">A revised, slightly different take on the original story. This edition often includes added details, refined writing, or expanded themes.</p>
+          <div class="mt-auto d-flex justify-content-between">
+            <strong>€ 4.6</strong>
+            <button class="btn btn-sm btn-outline-primary add-to-cart-btn" data-id="p12">Add</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!--item 12-->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="./img/image6 (7).jpg" class="card-img-top" alt="Book-Your Soul is a River" id="book-img">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Your Soul Is a River</h5>
+          <p class="card-text small text-muted" id="book-text">A modern poetry and reflection book about healing, mental clarity, and emotional journeys. It is written in a calming, relatable style.</p>
+          <div class="mt-auto d-flex justify-content-between">
+            <strong>€ 10.11</strong>
+            <button class="btn btn-sm btn-outline-primary add-to-cart-btn" data-id="p13">Add</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!--item 13-->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="./img/general-music-taschenbuch-carlos-r-professor-of-music-education-pr-abril-englisch.webp" id="book-img" class="card-img-top" alt="Book-General Music">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">General Music</h5>
+          <p class="card-text small text-muted" id="book-text">An accessible guide for music lovers that introduces musical concepts, genres, and influential artists in a simple way.</p>
+          <div class="mt-auto d-flex justify-content-between">
+            <strong>€ 6.90</strong>
+            <button class="btn btn-sm btn-outline-primary add-to-cart-btn" data-id="p14">Add</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!--item 14-->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="./img/pexels-marie-crestie-joie-contrata-3127187-4727841.jpg" class="card-img-top" alt="Books-All Alice Munro Collection" id="book-img">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">All Alice Munro Collection</h5>
+          <p class="card-text small text-muted" id="book-text">A set of short stories from Alice Munro, known for her rich character depth and everydaylife narratives. Perfect for thoughtful literary readers.</p>
+          <div class="mt-auto d-flex justify-content-between">
+            <strong>€ 14.56</strong>
+            <button class="btn btn-sm btn-outline-primary add-to-cart-btn" data-id="p15">Add</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!--item 15-->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="./img/pexels-dogadakisakal-77353893-14100740.jpg" id="book-img" class="card-img-top" alt="Book-Bush Craft 101">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Bush Craft 101</h5>
+          <p class="card-text small text-muted" id="book-text">A practical guide to wilderness survival, covering outdoor skills, tools, and nature knowledge. Great for hikers or outdoor beginners.</p>
+          <div class="mt-auto d-flex justify-content-between">
+            <strong>€ 13.20</strong>
+            <button class="btn btn-sm btn-outline-primary add-to-cart-btn" data-id="p16">Add</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+      <!-- Checkout Form (initially hidden) -->
+    <section class="mt-4">
+      <div id="checkoutCollapse" class="collapse">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="h6">Buyer Information</h3>
+            <p class="muted-small">Please fill in the details to complete your donation. Fields marked * are required.</p>
+
+            <form id="checkoutForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="firstName" class="form-label">First name *</label>
+                  <input type="text" id="firstName" class="form-control" required>
+                  <div class="invalid-feedback">First name is required.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="lastName" class="form-label">Last name *</label>
+                  <input type="text" id="lastName" class="form-control" required>
+                  <div class="invalid-feedback">Last name is required.</div>
+                </div>
+
+                <div class="col-12">
+                  <label for="company" class="form-label">Company (optional)</label>
+                  <input type="text" id="company" class="form-control">
+                </div>
+
+                <div class="col-12">
+                  <label for="address" class="form-label">Address *</label>
+                  <input type="text" id="address" class="form-control" required>
+                  <div class="invalid-feedback">Street address is required.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="city" class="form-label">City *</label>
+                  <input type="text" id="city" class="form-control" required>
+                  <div class="invalid-feedback">City is required.</div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="zip" class="form-label">ZIP code *</label>
+                  <input type="text" id="zip" class="form-control" maxlength="6" pattern="[0-9A-Za-z]{1,6}" required>
+                  <div class="invalid-feedback">ZIP code required (max 6 chars).</div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="phone" class="form-label">Phone *</label>
+                  <input type="tel" id="phone" class="form-control" pattern="[0-9]{6,15}" required placeholder="digits only">
+                  <div class="invalid-feedback">Phone is required and must be digits only (6-15 digits).</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email *</label>
+                  <input type="email" id="email" class="form-control" required>
+                  <div class="invalid-feedback">A valid email is required.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="notes" class="form-label">Notes (optional)</label>
+                  <input type="text" id="notes" class="form-control" placeholder="e.g. preferred pick-up time">
+                </div>
+              </div>
+
+              
+
+              <div id="orderPreview" class="mb-3">
+                <!-- small order summary inserted here -->
+              </div>
+
+              <div class="d-flex gap-2">
+                <button type="button" id="backToCartBtn" class="btn btn-outline-secondary">Back to Cart</button>
+                <button type="submit" class="btn btn-primary ms-auto">Submit Order</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--Confirmation details shown below-->
+    <section class="mt-4">
+      <div id="confirmationPanel" class="card d-none">
+        <div class="card-body">
+          <h3 class="h6">Order Confirmation</h3>
+          <p class="muted-small">Your details and order summary are below. Thank you for your donation.</p>
+
+          <div id="confirmationDetails" class="mb-3">
+            <!-- filled by JS -->
+          </div>
+
+          <div class="d-flex" id="">
+            <button id="newOrderBtn" class="btn btn-outline-primary">Make another donation</button><br>
+
+            <div class="ms-auto muted-small">Receipt will be sent to the email provided.</div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+  </div>
+</section>
+
+
+  
+<!--<section>
+  <div class="spinner-border spinner-border-sm" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow spinner-grow-sm" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+</section>-->
+
+    <script src="./js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+<footer style=" margin-top: 3rem; text-align:center; color:#6c757d;">
+            <small>CloveAid.org</small>
+          <p><small>contact us: 01154071</small></p> 
+          <p><small>Email: email@cloveaid.org</small></p> 
+        </footer>
+</body>
+</htm
